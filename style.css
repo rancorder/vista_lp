@@ -366,8 +366,8 @@ body {
 .trust-headline { font-size: 15px; font-weight: 700; color: var(--ink); line-height: 1.4; }
 .trust-sub      { font-size: 12px; color: var(--ink3); margin-top: 4px; }
 
-.video-wrap { width: 100%; aspect-ratio: 16 / 9; background: #000; }
-.video-wrap video { width: 100%; height: 100%; object-fit: contain; display: block; }
+.video-wrap { position: relative; width: 100%; aspect-ratio: 16 / 9; background: #000; overflow: hidden; }
+.video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; display: block; }
 
 .trust-footer { padding: .75rem 1.2rem; }
 .trust-footer-text { font-size: 12px; color: var(--ink3); }
